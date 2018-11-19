@@ -18,7 +18,7 @@ config = ConfigParser.ConfigParser()
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-config.read(os.path.join(BASE_DIR, 'use_django', 'config.ini'))
+config.read(os.path.join(BASE_DIR, 'django_mix', 'config.ini'))
 
 
 # Quick-start development settings - unsuitable for production
@@ -59,7 +59,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.locale.LocaleMiddleware',
 ]
 
-ROOT_URLCONF = 'use_django.urls'
+ROOT_URLCONF = 'django_mix.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'use_django.wsgi.application'
+WSGI_APPLICATION = 'django_mix.wsgi.application'
 
 
 # Database
@@ -127,7 +127,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'Asia/Shanghai'
+LANGUAGE_CODE = 'zh-Hans'
 
 TIME_ZONE = 'UTC'
 

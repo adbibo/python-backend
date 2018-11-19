@@ -14,4 +14,3 @@ class Counter(resource.Resource):
 
 
 endpoints.serverFromString(reactor, "tcp:8009").listen(server.Site(Counter()))
-reactor.run()
